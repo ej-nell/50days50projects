@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  height: 100vh;
+  display: flex;
+}
+
+.panel-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 5rem;
+}
+
+.panel {
+  width: 7.5%;
+  height: 100%;
+  border-radius: 3rem;
+  position: relative;
+  transition: all 0.55s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.panel.active {
+  width: 70%;
+}
+
+.image-caption {
+  font-size: 3.2rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  opacity: 0;
+  white-space: nowrap;
+  transition-delay: 1s;
+  transition: all 0.5s;
+}
+
+.active .image-caption {
+  opacity: 1;
+
+  color: white;
+  display: block;
+}
+
+.panel1 {
+  background-image: url(./images/1.jpg);
+}
+
+.panel2 {
+  background-image: url(./images/2.jpg);
+}
+.panel3 {
+  background-image: url(./images/3.jpg);
+}
+.panel4 {
+  background-image: url(./images/4.jpg);
+}
+.panel5 {
+  background-image: url(./images/5.jpg);
+}
